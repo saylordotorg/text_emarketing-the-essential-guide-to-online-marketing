@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="shared/bookhub.css" rel="stylesheet" type="text/css">
+  <title>Tracking and Collecting Data</title>
+</head>
+<body>
+
+  
+  <div id=navbar-top class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-02-how-it-works.html"><img src="shared/images/batch-left.png"></a> <a href="s18-02-how-it-works.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-04-analyzing-data.html">Next Section</a> <a href="s18-04-analyzing-data.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  <div id="book-content">
+    <div class="section" id="fwk-105454-ch14_s03" condition="start-of-chunk" version="5.0" lang="en">
+    <h2 class="title editable block">
+<span class="title-prefix">15.3</span> Tracking and Collecting Data</h2>
+    <div class="learning_objectives editable block" id="fwk-105454-ch14_s03_n01">
+        <h3 class="title">Learning Objective</h3>
+        <ol class="orderedlist" id="fwk-105454-ch14_s03_l01">
+            <li>Understand why tracking and data collection are important to eMarketing.</li>
+        </ol>
+    </div>
+    <p class="para editable block" id="fwk-105454-ch14_s03_p01">Currently, there are two main technology approaches for collecting Web analytics data: <span class="margin_term"><a class="glossterm">log-file analysis</a><span class="glossdef">Analysis of log records, which shows where visitors are coming from, how often they visit, and their path through the site. When used in conjunction with cookies, this analysis provides much more in-depth information.</span></span> and <span class="margin_term"><a class="glossterm">page tagging</a><span class="glossdef">The process of tagging Web pages with embedded JavaScript files.</span></span>.</p>
+    <p class="para editable block" id="fwk-105454-ch14_s03_p02">Log-file analysis software reads the records, called <span class="margin_term"><a class="glossterm">log files</a><span class="glossdef">Text files created on the server each time a click takes place, capturing all activity on the Web site.</span></span>, on the Web server, which record all clicks that take place on the server. Web servers have always stored all the clicks that take place in a log file, so the software interprets data that have always been available. A new line is written in a log file with each new request. For example, clicking on a link, an Ajax call, or submitting a form will each result in a new line being written.</p>
+    <p class="para editable block" id="fwk-105454-ch14_s03_p03">Page tagging, on the other hand, sends information to a third-party server, where statistics can be generated. The browser executes JavaScript code that communicates with the tracking software, creating <span class="margin_term"><a class="glossterm">page tags</a><span class="glossdef">JavaScript files embedded on a Web page and executed by the browser.</span></span>.</p>
+    <p class="para editable block" id="fwk-105454-ch14_s03_p04">Pixel tracking can be used to track e-mail campaigns. Here, a tiny, transparent pixel is placed in the e-mail. When you load the images in the e-mail, you will also load the tiny image that tracks your activity.</p>
+    <div class="callout editable block" id="fwk-105454-ch14_s03_n02">
+        <h3 class="title">Note</h3>
+        <p class="para" id="fwk-105454-ch14_s03_p05">Caching is when a browser stores some of the information for a Web page so it can retrieve the page more quickly when you return to it. If a Web page is cached by your browser, when you look at the page again, it will not send a request to the Web server. This means that that particular visit will not show in the log files. Page tagging, however, would capture this visit. But some browsers do not support JavaScript, and page tagging would not capture those visits. This is why there is often a discrepancy in the numbers reported by the two services.</p>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s02">
+        <h2 class="title editable block">Log-File Analysis</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s02_p01">In terms of log-file analysis, you should know the following:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s02_l01">
+            <li>Log files are normally produced by Web servers, so the raw data are readily available. Page tagging, however, requires changes to the Web site.</li>
+            <li>Log files are very accurate—they record every click. Page tagging can be less accurate. If a user’s browser does not support JavaScript, for example, no information will be captured.</li>
+            <li>Log files are in a standard format, so it is possible to switch vendors and still be able to analyze historical data. Page tagging is proprietary to each vendor, so switching can mean losing historical data.</li>
+            <li>Log files record visits from search engine spiders—useful for search engine optimization.</li>
+            <li>Log files record failed requests, whereas page tagging only shows successful requests.</li>
+        </ul>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s03">
+        <h2 class="title editable block">Page Tagging</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s03_p01">In terms of page tagging, you should know the following:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s03_l01">
+            <li>JavaScript makes it easier to capture more information (e.g., products purchased or screen size of a user’s browser). You can use log-file analysis to capture this information, but it will involve modifying the URLs (uniform resource locators).</li>
+            <li>Page tagging can report on events, such as interactions with a Flash movie, that log-file analysis cannot.</li>
+            <li>Page tagging can be used by companies that do not run their own Web servers.</li>
+            <li>Page tagging service providers usually offer a greater level of support. This is because it is a third-party service, whereas log-file analysis software is often managed in-house.</li>
+        </ul>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s03_p02">Because of the different methods of collecting data, the raw figures produced by the two services will differ. Sometimes, both are used to analyze a Web site. However, raw figures not matching up should not be a problem. It is through interpreting these figures that you will be able to understand how effective your eMarketing efforts are.</p>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s03_p03">Web site analytics packages can be used to measure most, if not all, eMarketing campaigns. Web site analysis should always account for the various campaigns being run. For example, generating high traffic volumes by employing various eMarketing tactics like SEO (search engine optimization), PPC (pay per click), and e-mail marketing can prove to be a pointless and costly exercise if the visitors are leaving your site without achieving one (or more) of your Web site’s goals. Conversion optimization aims to convert as many of a Web site’s visitors as possible into active customers.</p>
+        <div class="section" id="fwk-105454-ch14_s03_s03_s02">
+            <h2 class="title editable block">What Information Is Captured</h2>
+            <p class="para editable block" id="fwk-105454-ch14_s03_s03_s02_p01">There are three types of Web analytics metrics:</p>
+            <ol class="orderedlist editable block" id="fwk-105454-ch14_s03_s03_s02_l01">
+                <li>
+<span class="margin_term"><a class="glossterm">Count</a><span class="glossdef">Raw figures captured for analysis; these are the most basic Web analytics metric.</span></span>. These are the raw figures captured that will be used for analysis.</li>
+                <li>
+<span class="margin_term"><a class="glossterm">Ratio</a><span class="glossdef">An interpretation of data captured, a ratio can be between counts, ratios, or a ratio and a count metric.</span></span>. This is an interpretation of the data that are counted.</li>
+                <li>
+<strong class="emphasis bold">KPI (key performance indicator)</strong>. Either a count or a ratio, these are the figures that help you to determine your success in reaching your goals.</li>
+            </ol>
+            <div class="callout editable block" id="fwk-105454-ch14_s03_s03_s02_n01">
+                <h3 class="title">Discussion</h3>
+                <p class="para" id="fwk-105454-ch14_s03_s03_s02_p02">Why would you want to look at the activity of a single visitor? Why would you want to segment the traffic for analysis?</p>
+            </div>
+            <p class="para editable block" id="fwk-105454-ch14_s03_s03_s02_p03">In analysis, metrics can be applied to three different universes:</p>
+            <ol class="orderedlist editable block" id="fwk-105454-ch14_s03_s03_s02_l02">
+                <li>
+<strong class="emphasis bold">Aggregate</strong>. All traffic to the Web site for a defined period of time.</li>
+                <li>
+<strong class="emphasis bold">Segmented</strong>. A subset of all traffic according to a specific filter, such as by campaign (PPC) or visitor type (new visitor vs. returning visitor).</li>
+                <li>
+<strong class="emphasis bold">Individual</strong>. The activity of a single visitor for a defined period of time.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s04">
+        <h2 class="title editable block">Building Block Terms</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s04_p01">Here are some of the key metrics you will need to get started on Web site analytics:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s04_l01">
+            <li>
+<span class="margin_term"><a class="glossterm">Hit</a><span class="glossdef">Every request to the server is recorded as a hit, mistakenly used in Web analytics as an indication of a successful Web site.</span></span>. A request to the server (and a fairly meaningless number on its own).</li>
+            <li>
+<strong class="emphasis bold">Page</strong>. Unit of content (so downloads and Flash files can be defined as a page).</li>
+            <li>
+<strong class="emphasis bold">Page views</strong>. The number of times a page was successfully requested.</li>
+            <li>
+<strong class="emphasis bold">Visit or session</strong>. An interaction by an individual with a Web site consisting of one or more page views within a specified period of time.</li>
+            <li>
+                <p class="para"><strong class="emphasis bold">Unique visitors</strong>. The number of individual people visiting the Web site one or more times within a period of time. Each individual is only counted once. Types of visitors can be categorized as follows:</p>
+                <ul class="itemizedlist" id="fwk-105454-ch14_s03_s04_l02">
+                    <li>
+<strong class="emphasis bold">New visitor</strong>. A unique visitor who visits the Web site for the first time ever in the period of time being analyzed.</li>
+                    <li>
+<strong class="emphasis bold">Repeat visitor</strong>. A unique visitor with two or more visits within the time period being analyzed.</li>
+                    <li>
+<strong class="emphasis bold">Return visitor</strong>. A unique visitor who is not a new visitor.</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="callout editable block" id="fwk-105454-ch14_s03_s04_n01">
+            <h3 class="title">Note</h3>
+            <p class="para" id="fwk-105454-ch14_s03_s04_p02">A repeat visitor may be either a new visitor or a return visitor, depending on the number of times he or she has visited the site within the time period being analyzed.</p>
+        </div>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s04_p03">These are the most basic Web metrics. They tell you how much traffic your Web site is receiving. Looking at repeat and returning visitors can tell you about how your Web site creates loyalty. As well as growing overall visitor numbers, a Web site needs to grow the number of visitors who come back. An exception might be a support Web site—repeat visitors could indicate that the Web site has not been successful in solving the visitor’s problem. Each Web site needs to be analyzed based on its purpose.</p>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s05">
+        <h2 class="title editable block">Visit Characterization</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s05_p01">The following help characterize the visit to a particular Web site:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s05_l01">
+            <li>
+<strong class="emphasis bold">Entry page</strong>. The first page of a visit.</li>
+            <li>
+<strong class="emphasis bold">Landing page</strong>. The page intended to identify the beginning of the user experience resulting from a defined marketing effort.</li>
+            <li>
+<strong class="emphasis bold">Exit page</strong>. The last page of a visit.</li>
+            <li>
+<strong class="emphasis bold">Visit duration</strong>. The length of time in a session.</li>
+            <li>
+                <p class="para"><span class="margin_term"><a class="glossterm">Referrer</a><span class="glossdef">The URL that originally generated the request for the current page.</span></span>. The URL (uniform resource locator) that originally generated the request for the current page.</p>
+                <ul class="itemizedlist" id="fwk-105454-ch14_s03_s05_l02">
+                    <li>
+<strong class="emphasis bold">Internal referrer</strong>. A URL that is part of the same Web site.</li>
+                    <li>
+<strong class="emphasis bold">External referrer</strong>. A URL that is outside of the Web site.</li>
+                    <li>
+<strong class="emphasis bold">Search referrer</strong>. The URL has been generated by a search function.</li>
+                    <li>
+<strong class="emphasis bold">Visit referrer</strong>. The URL that originated a particular visit.</li>
+                    <li>
+<strong class="emphasis bold">Original referrer</strong>. The URL that sent a new visitor to the Web site.</li>
+                </ul>
+            </li>
+            <li>
+<strong class="emphasis bold">Click-through</strong>. The number of times a link was clicked by a visitor.</li>
+            <li>
+<strong class="emphasis bold">Click-through rate</strong>. The number of times a link was clicked divided by the number of times it was seen (impressions).</li>
+            <li>
+<strong class="emphasis bold">Page views per visit</strong>. The number of page views in a reporting period divided by the number of visits in that same period.</li>
+        </ul>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s05_p02">These are the terms that tell you how visitors reach your Web site and how they move through the Web site. The way that a visitor navigates a Web site is called a click path. Looking at the referrers, both internal and internal, allows you to gauge a click path that visitors take.</p>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s06">
+        <h2 class="title editable block">Content Characterization</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s06_p01">The following help characterize how visitors move through the Web site:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s06_l01">
+            <li>
+<strong class="emphasis bold">Page exit ratio</strong>. Number of exits from a page divided by total number of page views of that page.</li>
+            <li>
+<strong class="emphasis bold">Single-page visits</strong>. Visits that consist of one page, even if that page was viewed a number of times.</li>
+            <li>
+<strong class="emphasis bold">Bounces (single page-view visits)</strong>. Visits consisting of a single page view.</li>
+            <li>
+<strong class="emphasis bold">Bounce rate</strong>. Single page-view visits divided by entry pages.</li>
+        </ul>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s06_p02">When visitors view a page, they have two options: leave the Web site, or view another page on the Web site. These metrics tell you how visitors react to your content. Bounce rate can be one of the most important metrics that you measure! There are a few exceptions, but a high bounce rate usually means high dissatisfaction with a Web page.</p>
+    </div>
+    <div class="section" id="fwk-105454-ch14_s03_s07">
+        <h2 class="title editable block">Conversion Metrics</h2>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s07_p01">Other metrics that apply to eMarketing tactics include the following:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s07_l01">
+            <li>
+<strong class="emphasis bold">Event</strong>. A recorded action that has a specific time assigned to it by the browser or the server.</li>
+            <li>
+<strong class="emphasis bold">Conversion</strong>. A visitor completing a target action.</li>
+            <li>
+<strong class="emphasis bold">Impression</strong>. Each time an advertisement or a page is served.</li>
+            <li>
+<strong class="emphasis bold">Open</strong>. Each e-mail that is deemed open. Usually if the images are loaded, an e-mail is considered open.</li>
+        </ul>
+        <div class="callout editable block" id="fwk-105454-ch14_s03_s07_n01">
+            <h3 class="title">Note</h3>
+            <p class="para" id="fwk-105454-ch14_s03_s07_p02">For the most up-to-date definitions, visit <a class="link" target="_blank" href="http://www.webanalyticsassociation.org">http://www.webanalyticsassociation.org</a> to download the latest definitions in PDF (portable document format).</p>
+        </div>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s07_p03">In order to test the success of your Web site, you need to remember the TAO of conversion optimization:</p>
+        <ul class="itemizedlist editable block" id="fwk-105454-ch14_s03_s07_l02">
+            <li>
+<strong class="emphasis bold">T</strong>rack</li>
+            <li>
+<strong class="emphasis bold">A</strong>nalyze</li>
+            <li>
+<strong class="emphasis bold">O</strong>ptimize</li>
+        </ul>
+        <p class="para editable block" id="fwk-105454-ch14_s03_s07_p04">Using your goals and KPIs, you’ll know what metrics you will be tracking. You will then need to analyze these results and take appropriate actions. And the testing begins again!</p>
+        <div class="key_takeaways editable block" id="fwk-105454-ch14_s03_s07_n02">
+            <h3 class="title">Key Takeaways</h3>
+            <ul class="itemizedlist" id="fwk-105454-ch14_s03_s07_l03">
+                <li>Web analytics packages come in two flavors: log-file analysis and page-tagging analysis, although some packages combine both methods.</li>
+                <li>
+                    <p class="para">Metrics use the following:</p>
+                    <ul class="itemizedlist" id="fwk-105454-ch14_s03_s07_l04">
+                        <li>Counts</li>
+                        <li>Ratios</li>
+                        <li>KPIs (key performance indicators), which are either counts or ratios</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="exercises editable block" id="fwk-105454-ch14_s03_s07_n03">
+            <h3 class="title">Exercises</h3>
+            <ol class="orderedlist" id="fwk-105454-ch14_s03_s07_l05">
+                <li>How can site search data be used to optimize a Web site?</li>
+                <li>Why is “hit” a meaningless measure of Web site success?</li>
+            </ol>
+        </div>
+    </div>
+</div>
+
+  </div>
+  
+  <div id=navbar-bottom class="navbar">
+    <div class="navbar-part left">
+      
+        <a href="s18-02-how-it-works.html"><img src="shared/images/batch-left.png"></a> <a href="s18-02-how-it-works.html">Previous Section</a>
+      
+    </div>
+    <div class="navbar-part middle">
+      <a href="index.html"><img src="shared/images/batch-up.png"></a> <a href="index.html">Table of Contents</a>
+    </div>
+    <div class="navbar-part right">
+      
+        <a href="s18-04-analyzing-data.html">Next Section</a> <a href="s18-04-analyzing-data.html"><img src="shared/images/batch-right.png"></a>
+      
+    </div>
+  </div>
+
+  </div>
+  <script type="text/javascript" src="shared/book.js"></script>
+  
+  
+</body>
+</html>
